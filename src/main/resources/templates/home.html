@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="fragments/header :: header">
+        <title>Hello</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    </head>
+    <body>
+        <div class="container">
+            <div th:replace="fragments/bodyHeader :: bodyHeader" />
+            <div class="jumbotron">
+                <h1>Spring JPA Shop</h1>
+                <p class="lead">Member Service</p>
+                <p>
+                    <a class="btn btn-lg btn-secondary" href="/members/new">Register Member</a>
+                    <a class="btn btn-lg btn-secondary" href="/members">Member List</a>
+                </p>
+                <p class="lead">Item Service</p>
+                <p>
+                    <a class="btn btn-lg btn-dark" href="/items/new">Create Item</a>
+                    <a class="btn btn-lg btn-dark" href="/items">Item List</a>
+                </p>
+                <p class="lead">Order Service</p>
+                <p>
+                    <a class="btn btn-lg btn-info" href="/order">Order</a>
+                    <a class="btn btn-lg btn-info" href="/orders">Order History</a>
+                </p>
+            </div>
+            <div th:replace="fragments/footer :: footer" />
+        </div>
+    </body>
+</html>
